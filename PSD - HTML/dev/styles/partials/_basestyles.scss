@@ -1,0 +1,51 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: $primaryFont, $secondaryFont;
+}
+
+.globalWrapper{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+p{
+	font-size: 16px;
+	color: #848789;
+	font-family: $primaryFont;
+	line-height: 31px;
+	font-weight: 300;
+}
+
+h2{
+	color: #353638;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: $primaryFont;
+	letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img{
+	width: 100%;
+	display: block;
+	max-width: 100%;
+	background-position: bottom center;
+}
+
+a{
+	text-decoration: none;
+}
+
+

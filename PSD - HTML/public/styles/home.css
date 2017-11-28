@@ -1,0 +1,1095 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif, "Open Sans", sans-serif; }
+
+.globalWrapper {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+p {
+  font-size: 16px;
+  color: #848789;
+  font-family: "Lato", sans-serif;
+  line-height: 31px;
+  font-weight: 300; }
+
+h2 {
+  color: #353638;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  background-position: bottom center; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background-image: url("../assets/rsz_hero-image.jpg");
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  padding-top: 1%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+section.menu .hamburger {
+  display: none; }
+
+.menu .mobileLogo {
+  display: none; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-top: 1%; }
+  .menu li {
+    padding: 0 20px; }
+    .menu li a {
+      padding: 20px 0;
+      -webkit-transition: .3s;
+      transition: .3s;
+      color: #282f35; }
+
+.menu li a:hover {
+  background: lightgrey;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0; }
+
+.navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .navLinks li img {
+    width: 94px;
+    height: 85px; }
+
+.overlay.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 9999;
+  color: white; }
+
+.overlay ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.overlay ul a {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  padding: 30px; }
+
+.overlay .hamburger {
+  display: block;
+  font-size: 50px;
+  text-align: center; }
+
+ul.mobileMenu {
+  display: none; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  header {
+    height: 500px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 700px) {
+  header {
+    height: 300px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+    header .menu .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      top: 15px;
+      right: 15px;
+      z-index: 9999;
+      position: fixed;
+      color: #a05460; }
+  ul.mobileMenu {
+    display: none; }
+  ul.mobileMenu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 48px; }
+  ul.mobileMenu.small li {
+    padding: 15px 0;
+    position: block; }
+    ul.mobileMenu.small li a {
+      color: #64c29e; }
+  ul.navLinks {
+    display: none; }
+  .menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px; }
+    .menu .mobileLogo {
+      display: block;
+      width: 65px;
+      margin-top: 12px; } }
+
+section.mainHeading {
+  height: 496px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.mainHeading .headingBox {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.mainHeading .headingBox .gearIcon {
+      width: 52px;
+      height: 43px; }
+
+.mainHeading h2 {
+  padding: 35px 0; }
+
+.headingBox p {
+  font-size: 18px; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  section.mainHeading {
+    height: 566px; }
+    section.mainHeading p {
+      text-align: left; } }
+
+section.gallery1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  section.gallery1 .imageOne {
+    background: url("../assets/rsz_big-handle-bars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%; }
+
+.boxTwo {
+  width: 50%; }
+  .boxTwo .textBox {
+    height: 399px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #848789; }
+    .boxTwo .textBox .bikeFrameIcon {
+      width: 41px;
+      height: 30px;
+      margin: 31px 0; }
+
+.boxTwo h2 {
+  padding-bottom: 19px; }
+
+.whiteBikeOverlay {
+  position: absolute;
+  width: 113px;
+  height: 118px;
+  left: 31%;
+  top: 39%; }
+
+span.miniLine {
+  width: 50px;
+  height: 1px;
+  background: #353738;
+  margin: 33px 0 26px 0; }
+
+.sideBikeSeat {
+  background: url("../assets/rsz_img_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  background-position: center center; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.gallery1 .imageOne {
+    width: 50%; }
+  .whiteBikeOverlay {
+    left: 18%;
+    top: 37%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.gallery1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section.gallery1 .boxTwo {
+      width: 100%; }
+  section.gallery1 .imageOne {
+    height: 406px;
+    width: 100%; }
+  .sideBikeSeat {
+    display: none; }
+  .whiteBikeOverlay {
+    left: 43%;
+    top: 14%; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .whiteBikeOverlay {
+    top: 16%;
+    left: 38%; }
+    .whiteBikeOverlay img {
+      width: 78%; } }
+
+section.gallery2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.boxThree {
+  width: 50%; }
+  .boxThree .textBox {
+    height: 399px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #848789; }
+    .boxThree .textBox .roundGear {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 31px; }
+
+.boxThree h2 {
+  padding-bottom: 19px; }
+
+.blackSeat {
+  background: url("../assets/rsz_over-head-seat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 201px;
+  background-position: center; }
+
+.bikeWater {
+  background: url("../assets/rsz_green-bike-water.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: bottom; }
+
+.vintageOverlay {
+  position: absolute;
+  width: 177px;
+  height: 152px;
+  bottom: 38%;
+  right: 26%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.gallery2 .bikeWater {
+    width: 50%; }
+  .vintageOverlay {
+    right: 15%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.gallery2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    section.gallery2 .blackSeat {
+      display: none; }
+  section.gallery2 .bikeWater {
+    height: 400px;
+    width: 100%; }
+  .boxThree {
+    width: 100%; }
+  .vintageOverlay {
+    right: 35%;
+    top: 17%; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .vintageOverlay {
+    width: 28%;
+    right: 37%; } }
+
+section.gallery3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.boxFour {
+  width: 33.33%; }
+  .boxFour .textBox {
+    height: 399px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #848789; }
+    .boxFour .textBox .bikeFork {
+      width: 32px;
+      height: 41px;
+      margin-bottom: 31px;
+      margin-top: 21px; }
+
+.boxFour h2 {
+  padding-bottom: 19px; }
+
+.redBikeShaft {
+  background: url("../assets/rsz_red-shaft.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%;
+  background-position: bottom center; }
+
+.bicyclesOverlay {
+  position: absolute;
+  width: 208px;
+  height: 67px;
+  left: 8.5%;
+  top: 44%; }
+
+.insideWheel {
+  background: url("../assets/rsz_red-inside-wheel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  background-position: bottom center; }
+
+.bikeWall {
+  background: url("../assets/rsz_red-wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%;
+  background-position: bottom center; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.gallery3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section.gallery3 .insideWheel {
+      display: none; }
+  .boxFour {
+    width: 100%; }
+  .boxFour .textBox {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("../assets/rsz_red-wall.jpg");
+    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("../assets/rsz_red-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0 30px; }
+    .boxFour .textBox p {
+      color: #f7f7f7; }
+  .bicyclesOverlay, .miniLine, .bikeFork {
+    display: none; }
+  .gallery3 h2 {
+    color: #282f35; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+section.lastGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.boxFive {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .boxFive .behind-black-seat {
+    background: url("../assets/rsz_behind-black-seat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 267px; }
+
+.seatsWall {
+  background: url("../assets/rsz_seats-wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 267px;
+  height: 267px; }
+
+.boxSix {
+  width: 100%; }
+  .boxSix .closeUpBlackSeat {
+    background: url("../assets/rsz_closeup_black_seat_behind.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 267px; }
+
+.bagOnBike {
+  background: url("../assets/rsz_bag-on-bike_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.backHalfBike {
+  background: url("../assets/rsz_back-half.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.boxSeven {
+  width: 100%; }
+  .boxSeven .bikeStore {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("../assets/rsz_store.jpg");
+    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("../assets/rsz_store.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 267px; }
+
+.littleWhiteBikeOverlay {
+  position: absolute;
+  width: 51px;
+  height: 30px;
+  top: 20%;
+  right: 14%; }
+
+.shopNow {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  right: 12px;
+  width: 90px;
+  letter-spacing: 1px;
+  font-weight: 400; }
+
+.boxEight {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .boxEight .overheadBrown {
+    background: url("../assets/rsz_overhead-brown-seat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 267px; }
+
+.blackBag {
+  background: url("../assets/rsz_black-bag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 267px;
+  height: 267px; }
+
+.stackOne {
+  width: 36.33%; }
+
+.bikeBagStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.stackTwo {
+  width: 34.33%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.lastGallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    section.lastGallery .stackOne {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .boxFive .behind-black-seat, .seatsWall {
+    width: 50%; }
+  .boxSix {
+    width: 50%; }
+    .boxSix .closeUpBlackSeat {
+      width: 100%; }
+  .bikeBagStack {
+    display: none; }
+  .stackTwo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .stackTwo .boxSeven {
+      width: 72%; }
+      .stackTwo .boxSeven .littleWhiteBikeOverlay {
+        top: 69%;
+        right: 77%; }
+  .boxEight .overheadBrown, .blackBag {
+    width: 50%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.lastGallery .stackOne {
+    width: 100%; }
+    section.lastGallery .stackOne .boxFive {
+      width: 100%; }
+      section.lastGallery .stackOne .boxFive .behind-black-seat {
+        background-position-y: center;
+        width: 50%; }
+  .boxFive .seatsWall {
+    width: 50%; }
+  .boxSix {
+    display: none; }
+  .stackTwo {
+    width: 100%; }
+    .stackTwo .boxSeven {
+      width: 100%; }
+      .stackTwo .boxSeven .littleWhiteBikeOverlay {
+        top: 69%;
+        right: 60%; }
+  .boxEight {
+    width: 50%; }
+    .boxEight .overheadBrown {
+      background-position-x: center;
+      width: 100%; }
+  .boxEight .blackBag {
+    display: none; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .boxFive {
+    display: none; }
+  .stackTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .stackTwo .boxEight {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 0; }
+      .stackTwo .boxEight .overheadBrown {
+        width: 50%; }
+  .stackTwo .boxSeven .littleWhiteBikeOverlay {
+    top: 72%;
+    right: 44%; } }
+
+section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 469px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.contact .bottomLogo {
+    width: 94px;
+    height: 85px;
+    margin-bottom: 46px; }
+
+.contactBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .contactBox h2 {
+    color: #848789;
+    font-style: italic;
+    padding-bottom: 35px;
+    text-transform: capitalize;
+    font-weight: 300; }
+
+.emailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .emailForm .email input {
+    width: 400px;
+    height: 69px;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 4px;
+    padding-left: 20px;
+    font-weight: 300;
+    color: #929292;
+    letter-spacing: 0.5px; }
+
+.goButton button {
+  background: #64c29e;
+  width: 126px;
+  height: 69px;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 4px;
+  border: none;
+  font-weight: 300; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 605px) {
+  section.contact .emailForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section.contact .emailForm button {
+      margin: 0;
+      width: 99%;
+      margin-top: 28px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  section.contact .emailForm {
+    width: 320px; }
+    section.contact .emailForm .email input {
+      width: 320px; }
+    section.contact .emailForm button {
+      border-radius: 5px; } }
+
+section.discoverShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #282f35;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  section.discoverShop .discoverButton button {
+    width: 300px;
+    height: 50px;
+    border: 1px solid white;
+    background: none;
+    border: none;
+    border: 1px solid white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    display: inline; }
+
+section.socialContacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f7f7f7;
+  height: 250px; }
+
+.socialBoxOne, .socialBoxTwo, .socialBoxThree {
+  width: 33.33%; }
+  .socialBoxOne p, .socialBoxTwo p, .socialBoxThree p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 21px;
+    width: 277px; }
+
+.socialBoxOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .socialBoxOne p:nth-child(1) {
+    font-weight: 700; }
+
+.socialBoxOne p.addressFont {
+  font-style: italic; }
+
+.socialBoxTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .socialBoxTwo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.socialBoxThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-right: 3%; }
+
+.socialBoxTwo li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+  .socialBoxTwo li a {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .socialBoxTwo li a i {
+      font-size: 20px;
+      color: white; }
+
+.socialBoxTwo li:nth-child(1) {
+  background: #1dcaff; }
+
+.socialBoxTwo li:nth-child(2) {
+  margin: 0 15px;
+  background: #3b5998; }
+
+.socialBoxTwo li:nth-child(3) {
+  background: #bd081c; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.socialContacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    section.socialContacts .socialBoxOne {
+      padding-left: 0;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .socialBoxThree {
+    padding-right: 0;
+    width: 200px; }
+  .socialBoxTwo {
+    margin: 30px; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.socialContacts {
+    height: 270px; } }
+
+/* Landscape phones and down */
+section.secondHeading {
+  height: 496px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.secondHeading .headingBox {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.secondHeading .headingBox .twitterIcon i {
+      color: #1dcaff;
+      font-size: 35px; }
+
+.secondHeading p {
+  padding: 10px 0; }
+
+.headingBox .aod {
+  color: #353638;
+  font-weight: 700; }
+
+.headingBox p.twitterText {
+  font-style: italic; }

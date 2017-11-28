@@ -1,0 +1,75 @@
+section.contact{
+	display: flex;
+	height: 469px;
+	justify-content: center;
+	align-items: center;
+	.bottomLogo{
+		width: 94px;
+		height: 85px;
+		margin-bottom: 46px;
+	}
+}
+.contactBox{
+	// margin-top: 109px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	h2{
+		color: #848789;
+		font-style: italic;
+		padding-bottom: 35px;
+		text-transform: capitalize;
+		font-weight: 300;
+	}
+}
+.emailForm{
+	display: flex;
+	.email input{
+		width: 400px;
+		height: 69px;
+		font-size: 20px;
+		font-style: italic;
+		margin-right: 4px;
+		padding-left: 20px;
+		font-weight: 300;
+		color: #929292;
+		letter-spacing: 0.5px;
+	}
+}
+.goButton button{
+	background: $image-filter;
+	width: 126px;
+	height: 69px;
+	font-size: 24px;
+	font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 4px;
+    border: none;
+    font-weight: 300;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 605px) {
+	section.contact .emailForm{
+		flex-direction: column;
+		button{
+			margin: 0;
+			width: 99%;
+			margin-top: 28px;
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	section.contact .emailForm{
+		width: 320px;
+		.email input{
+			width: 320px;
+		}
+		button{
+			border-radius: 5px;
+		}
+	}
+}
