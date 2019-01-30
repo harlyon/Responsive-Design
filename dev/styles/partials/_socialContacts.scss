@@ -1,0 +1,105 @@
+section.socialContacts{
+	display: flex;
+	background: $background;
+	height: 250px;
+}
+.socialBoxOne, .socialBoxTwo, .socialBoxThree{
+	width: 33.33%;
+	p{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 21px;
+	width: 277px;
+	}
+}
+.socialBoxOne{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding-left: 3%;
+	justify-content: center;
+	p:nth-child(1){
+		font-weight: 700;
+	}
+}
+.socialBoxOne p.addressFont {
+	font-style: italic;
+}
+.socialBoxTwo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	ul{
+		display: flex;
+	}
+}
+.socialBoxThree{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 3%;
+}
+
+.socialBoxTwo {
+	li {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		a {
+			position: absolute;
+			padding: 10px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			i {
+				font-size: 20px;
+				color: white;
+			}
+		}
+	}
+}
+.socialBoxTwo li:nth-child(1){
+	background: #1dcaff;
+}
+.socialBoxTwo li:nth-child(2) {
+	margin: 0 15px;
+	background: #3b5998;
+}
+.socialBoxTwo li:nth-child(3) {
+	background: #bd081c;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.socialContacts{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		.socialBoxOne{
+			padding-left: 0;
+			align-items: center;
+		}
+	}
+		.socialBoxThree{
+			padding-right:0;
+			width: 200px;
+		}
+		.socialBoxTwo{
+			margin: 30px;
+		}
+	}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	section.socialContacts{
+		height: 270px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

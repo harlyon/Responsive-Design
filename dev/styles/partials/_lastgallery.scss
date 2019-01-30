@@ -1,0 +1,201 @@
+section.lastGallery{
+	display: flex;
+	position: relative;
+}
+.boxFive{
+	width: 100%;
+	display: flex;
+	.behind-black-seat{
+		background: url("../assets/rsz_behind-black-seat.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 267px;
+		height: 267px;
+	}
+}
+.seatsWall{
+	background: url("../assets/rsz_seats-wall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 267px;
+	height: 267px;
+}
+.boxSix{
+	width: 100%;
+	.closeUpBlackSeat{
+		background: url("../assets/rsz_closeup_black_seat_behind.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 267px;
+	}
+}
+.bagOnBike{
+	background: url("../assets/rsz_bag-on-bike_1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 534px;
+	display: flex;
+}
+.backHalfBike{
+	background: url("../assets/rsz_back-half.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 534px;
+	display: flex;
+}
+.boxSeven{
+	width: 100%;
+	.bikeStore{
+		background: linear-gradient(rgba(100, 194, 158, 0.80), rgba(100, 194, 158, 0.8)), url("../assets/rsz_store.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 267px;
+	}
+}
+.littleWhiteBikeOverlay{
+	position: absolute;
+	width: 51px;
+	height: 30px;
+	top: 20%;
+	right: 14%;
+}
+.shopNow{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	position: relative;
+	right: 12px;
+	width: 90px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+.boxEight{
+	width: 100%;
+	display: flex;
+		.overheadBrown{
+		background: url("../assets/rsz_overhead-brown-seat.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 267px;
+		height: 267px;
+	}
+}
+.blackBag{
+	background: url("../assets/rsz_black-bag.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 267px;
+	height: 267px;
+}
+.stackOne{
+	width: 36.33%;
+}
+.bikeBagStack{
+	display: flex;
+	width: 100%;
+}
+.stackTwo{
+	width: 34.33%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.lastGallery{
+		flex-wrap: wrap;
+		.stackOne {
+			width: 100%;
+			display: flex;
+		}
+	}
+	.boxFive .behind-black-seat, .seatsWall{
+		width: 50%;
+	}
+	.boxSix{
+		width: 50%;
+		.closeUpBlackSeat{
+			width: 100%;
+		}
+	}
+	.bikeBagStack{
+		display: none;
+	}
+	.stackTwo{
+		width: 100%;
+		display: flex;
+		.boxSeven{
+			width: 72%;
+			.littleWhiteBikeOverlay{
+				top: 69%;
+				right: 77%;
+			}
+		}
+	}
+	.boxEight .overheadBrown, .blackBag{
+		width: 50%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	section.lastGallery .stackOne{
+		width: 100%;
+		.boxFive{
+			width: 100%;
+			.behind-black-seat{
+				background-position-y: center;
+				width: 50%;
+			}
+		}
+	}
+	.boxFive .seatsWall{
+		width: 50%;
+	}
+	.boxSix{
+		display: none;
+	}
+	.stackTwo{
+		width: 100%;
+		.boxSeven{
+			width: 100%;
+			.littleWhiteBikeOverlay{
+				top: 69%;
+				right: 60%;
+			}
+		}
+	}
+	.boxEight{
+		width: 50%;
+		.overheadBrown{
+			background-position-x: center;
+			width: 100%;
+		}
+	}
+	.boxEight .blackBag{
+		display: none;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.boxFive{
+		display: none;
+	}
+	.stackTwo{
+		flex-direction: column-reverse;
+		.boxEight{
+			width: 100%;
+			justify-content: center;
+			padding: 20px 0;
+			.overheadBrown{
+				width: 50%;
+			}
+		}
+	}
+	.stackTwo .boxSeven .littleWhiteBikeOverlay{
+		top: 72%;
+		right: 44%;
+	}
+}

@@ -1,0 +1,134 @@
+header{
+	background-image: url("../assets/rsz_hero-image.jpg");
+	width: 100%; 
+	height: 800px;
+	background-repeat: no-repeat;
+	padding-top: 1%;
+	background-size: cover;
+	background-position: center center;
+	transition: .3s ease-in-out;
+}
+
+section.menu .hamburger{
+	display: none;
+}
+.menu .mobileLogo{
+	display: none;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-top: 1%;
+	li{
+		padding: 0 20px;
+		a{
+			padding: 20px 0;
+			transition: .3s;
+			color: $discover-background;
+		}
+	}
+}
+.menu li a:hover{
+	background: lightgrey;
+	transition: ease-in-out .3s ;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 0;
+}
+.navLinks{
+	display: flex;
+	align-items: center;
+	li img{
+		width: 94px;
+		height: 85px;
+	}
+}
+.overlay.menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.88);
+	z-index: 9999;
+	color: white;
+}
+.overlay ul {
+	flex-direction: column;
+}
+.overlay ul a {
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+.overlay .hamburger {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+}
+ul.mobileMenu{
+	display: none;
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header{
+		height: 500px;
+		transition: .3s ease-in-out;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 700px) {
+	header{
+		height: 300px;
+		transition: .3s ease-in-out;
+		.menu .hamburger{
+			display: block;
+			font-size: 30px;
+			cursor: pointer;
+			transition: 0.3s ease-in-out;
+			top: 15px;
+			right: 15px;
+			z-index: 9999;
+			position: fixed;
+			color: #a05460;
+		}
+	}
+	ul.mobileMenu{
+		display: none;
+	}
+	ul.mobileMenu.open{
+		display: flex;
+		align-items: center;
+		margin-top: 48px;
+	}
+	ul.mobileMenu.small li{
+		padding: 15px 0;
+		position: block;
+		a{
+			color: $image-filter;
+		}
+	}
+	ul.navLinks{
+		display: none;
+	}
+	.menu{
+	justify-content: flex-start;
+    padding: 20px;
+	.mobileLogo{
+		display: block;
+		width: 65px;
+		margin-top: 12px;
+	} 
+}
+
+}//MQ 700 close
+
+
+

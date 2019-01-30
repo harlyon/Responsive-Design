@@ -1,0 +1,97 @@
+section.gallery3{ 
+	display: flex;
+	position: relative;
+}
+.boxFour{
+	width: 33.33%;
+	.textBox{
+		height: 399px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+		font-size: 16px;
+		color: #848789;
+		.bikeFork{
+			width: 32px;
+			height: 41px;
+			margin-bottom: 31px;
+			margin-top: 21px;
+		}
+	}
+}
+.boxFour h2{
+	padding-bottom: 19px;
+}
+.redBikeShaft{
+	background: url("../assets/rsz_red-shaft.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 33.33%;
+	background-position: bottom center;
+}
+.bicyclesOverlay{
+	position: absolute;
+	width: 208px;
+	height: 67px;
+	left: 8.5%;
+	top: 44%;
+}
+.insideWheel{
+	background: url("../assets/rsz_red-inside-wheel.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	background-position: bottom center;
+}
+.bikeWall{
+	background: url("../assets/rsz_red-wall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 33.33%;
+	background-position: bottom center;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.gallery3{ 
+		flex-direction: column;
+		.insideWheel{
+			display: none;
+		}
+	}
+	.boxFour{
+		width: 100%;
+	}
+	.boxFour .textBox{
+		background: linear-gradient(rgba(100, 194, 158, 0.80), rgba(100, 194, 158, 0.8)), url("../assets/rsz_red-wall.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		background-repeat: no-repeat;
+		width: 100%;
+		padding: 0 30px;
+		p{
+			color: $background;
+		}
+	}
+	.bicyclesOverlay, .miniLine, .bikeFork{
+		display: none;
+	}
+	.gallery3 h2{
+		color: $discover-background;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
